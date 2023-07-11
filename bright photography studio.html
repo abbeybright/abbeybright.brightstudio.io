@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bright Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link type="image/x-icon" rel="icon" href="imageee/Bright-logo.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<style>
+.con {
+  position: relative;
+
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  height:100%;
+  width:100%;
+  opacity:0;
+  transition:.5s ease;
+  background-color:RGBA(0,140,186,0.5)
+
+}
+
+.con:hover .overlay {
+
+   opacity: 1;
+}
+
+.text {
+   color:white;
+   font: size 20px;
+   position:absolute;
+   top:50%;
+   left:50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform:translate(-50%, -50%);
+   text-align:center
+
+
+
+
+
+}
+
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+
+
+
+</style>
+
+
+
+
+  </head>
+  <body>
+
+<!---nav bar-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary pb-0 pt-0 sticky-lg-top">
+    <div class="container-fluid navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="imageee/Bright-logo.png" height="60px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Portfolio
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#work">Wedding</a></li>
+              <li><a class="dropdown-item" href="#work">Baby Bum</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#work">Other Event</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#test">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<!--slider-->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-mdb-interval="false" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imageee/slider1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imageee/slider2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imageee/slider3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <span id="about"></span>
+  </div>
+
+<!--about-->
+  <div class="container">
+<h1 class="text-center p-5 mb-2 mt-5">Welcom To My World</h1>
+<p class="text-center">
+Step into a world of creativity, innovation, and boundless possibilities. Whether you're an aspiring artist, a passionate designer, or simply someone who appreciates the beauty of artistic expression, you've come to the right place.
+    
+    Our studio is a hub where ideas take shape, colors come to life, and imagination knows no limits. We are dedicated to providing a platform for artists to thrive and showcase their talents, as well as a haven for art enthusiasts to discover, appreciate, and connect with the vibrant world of creativity.
+    
+    Explore our website to uncover a treasure trove of stunning artworks, ranging from mesmerizing paintings and intricate sculptures to captivating digital art and awe-inspiring installations. Dive into our blog to gain insights from seasoned artists, learn about the latest trends in the art world, and get inspired by stories of artistic journeys.</p>
+
+<button type="button" class="btn btn-primary btn-sm mt-2">Book a section now</button>
+
+
+  </div>
+<!--our work-->
+<div class="container" id="work">
+ <div class="row">   
+<h1 class="text-center fs-1 p-5 mt-5">It's Our Work</h1>
+<div class="col">
+<div class="card">
+    <img src="imageee/slider4.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Portraits</h5>
+      <p class="card-text">Dive into our blog to gain insights from seasoned artists, learn about the latest trends in the art world.</p>
+      <a href="#" class="btn btn-primary">Book a Session</a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card">
+    <img src="imageee/slider5.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Fashions</h5>
+      <p class="card-text">We are dedicated to providing a platform for artists to thrive and showcase their talents.</p>
+      <a href="#" class="btn btn-primary">Book a Session</a>
+    </div>
+  </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="imageee/slider6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Fashions</h5>
+        <p class="card-text">We are dedicated to providing a platform for artists to thrive and showcase their talents.</p>
+        <a href="#" class="btn btn-primary">Book a Session</a>
+      </div>
+    </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="container-fluid">
+<a href="https://www.instagram.com/abbeybright51/" target="_blank"><div class="row mt-5 pt-0 gx-0 con">
+<div class="col"><img src="imageee/slider7.jpg" class="img-thumbnail" alt=",,,"></div>
+<div class="col"><img src="imageee/slider10.jpg" class="img-thumbnail" alt=",,,"></div>
+<div class="col"><img src="imageee/slider9.jpg" class="img-thumbnail" alt=",,,"></div>
+<div class="col"><img src="imageee/slider12.jpg" class="img-thumbnail" alt=",,,"></div>
+<div class="col"><img src="imageee/slider11.jpg" class="img-thumbnail" alt=",,,"></div>
+
+<div class="overlay">
+
+<div class="text"><i class="bi bi-instagram"></i><br>Instagram<br>@abbeybright51</div>
+
+</div>
+
+
+
+</div>
+</a>
+
+</div>
+
+<!--testimonia-->
+<div class="container pt-5" id="test">
+<section>
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10 col-xl-8 text-center">
+      <h3 class="mb-4">Testimonials</h3>
+      <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+        "Choosing [Studio Name] was one of the best decisions I made for my business. They took the time to understand my brand and objectives, and their creativity brought my ideas to life. The level of professionalism and communication throughout the process was exceptional. I highly recommend [Studio Name] to anyone in need of outstanding visual content." - Sarah Johnson, Small Business Owner.
+      </p>
+    </div>
+  </div>
+
+  <div class="row text-center d-flex align-items-stretch">
+    <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+      <div class="card testimonial-card">
+        <div class="card-up" style="background-color: #9d789b;"></div>
+        <div class="avatar mx-auto bg-white">
+          <img src="imageee/slider13.jpg"
+            class="rounded-circle img-fluid" />
+        </div>
+        <div class="card-body">
+          <h4 class="mb-4">Maria Smantha</h4>
+          <hr />
+          <p class="dark-grey-text mt-4">
+            <i class="fas fa-quote-left pe-2"></i>"Working with Bright Studio was an absolute pleasure. The team was highly professional, creative, and dedicated to bringing our vision to life. The final product exceeded our expectations, and we couldn't be happier with the results. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+      <div class="card testimonial-card">
+        <div class="card-up" style="background-color: #7a81a8;"></div>
+        <div class="avatar mx-auto bg-white">
+          <img src="imageee/slider14.jpg"
+            class="rounded-circle img-fluid" />
+        </div>
+        <div class="card-body">
+          <h4 class="mb-4">Lisa Cudrow</h4>
+          <hr />
+          <p class="dark-grey-text mt-4">
+            <i class="fas fa-quote-left pe-2"></i>"I had the opportunity to collaborate with Bright Studio on a recent project, and I must say they are top-notch professionals. Their attention to detail, artistic flair, and technical expertise are unmatched. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-0 d-flex align-items-stretch">
+      <div class="card testimonial-card">
+        <div class="card-up" style="background-color: #6d5b98;"></div>
+        <div class="avatar mx-auto bg-white">
+          <img src="imageee/slider15.jpg"
+            class="rounded-circle img-fluid" />
+        </div>
+        <div class="card-body">
+          <h4 class="mb-4">John Smith</h4>
+          <hr />
+          <p class="dark-grey-text mt-4">
+            <i class="fas fa-quote-left pe-2"></i>"Working with Bright Studio was an absolute breeze. They were responsive, professional, and delivered exceptional quality within our tight deadline. Their creative input and attention to detail made a significant difference in the final product.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+
+<!--blog-->
+<div class="container" id="blog">
+  <div class="row">   
+ <h1 class="text-center fs-1 p-5 mt-5">About</h1>
+ <div class="col">
+ <div class="card">
+     <img src="imageee/slider17.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Animals</h5>
+       <p class="card-text">When you hear the term "bird photography," do you think of something in particular? Perhaps a fast-flying raptor, or maybe the hummingbird at your feeder that you've been attempting to get for the past two weeks.</p>
+       <a href="#" class="btn btn-primary">Book a Session</a>
+     </div>
+   </div>
+ </div>
+ <div class="col">
+   <div class="card">
+     <img src="imageee/slider18.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Fashions</h5>
+       <p class="card-text">Last week was packed with news. Besides the unique opportunity to download raw files taken with the new Nikon Z8 on Photography Life, we have a variety of new cameras that arrived on the photography scene last week. </p>
+       <a href="#" class="btn btn-primary">Book a Session</a>
+     </div>
+   </div>
+   </div>
+   <div class="col">
+     <div class="card">
+       <img src="imageee/slider19.jpg" class="card-img-top" alt="...">
+       <div class="card-body">
+         <h5 class="card-title">Nature</h5>
+         <p class="card-text">The biggest buzz this month was definitely caused by the introduction of the Nikon Z8. Earlier this weekend, the Photography Life team got our hands on two copies of this long-awaited camera.</p>
+         <a href="#" class="btn btn-primary">Book a Session</a>
+       </div>
+     </div>
+     </div>
+     <nav aria-label="Page navigation example" class="mt-5">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+ </div>
+ 
+ </div>
+ 
+ </div>
+
+
+<!--contact-->
+
+<div class="container" id="contact">
+<div class="row">
+<div class="col">
+    <h1 class="text-center fs-1 p-5 mt-5">Contact Us</h1> 
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text"></div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Email <address></address></label>
+          <input type="email" class="form-control" id="exampleInputPassword1">We'll never share your email with anyone else.
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text"></div>
+          </div>
+       
+       
+
+
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Job Type</label>
+         <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="Commercial/Advertising">Commercial/Advertising</option>
+        <option value="Event">Event</option>
+        <option value="Family Portrait">Family Portrait</option>
+        <option value="Fashions">Fashions</option>
+        <option value="Headshot">Headshot</option>
+        <option value="Maternity">Maternity</option>
+        <option value="Model Portfolio">Model Portfolio</option>
+        <option value="New Born">New Born</option>
+        <option value="Pet">Pet</option>
+        <option value="Portrait">Portrait</option>
+        <option value="Wedding">Wedding</option>
+        <option value="Real Estate & Architecture">Real Estate & Architecture</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Main Shoot Date</label>
+        <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Message  (tell us more about your enquiry)
+        </label>
+        <textarea class="form-control"></textarea> 
+      </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me</label>
+      </div>
+    <button type="tel" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+<div class="col pt-5"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.851933606287!2d3.3389213999999994!3d6.6652641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b941d78be2f0f%3A0x634a0b4040ea3b63!2s23%20Animat%20St%2C%20Iju%20101232%2C%20Lagos!5e0!3m2!1sen!2sng!4v1689080326905!5m2!1sen!2sng" width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<!--footer-->
+
+<footer class="container-fluid bg-dark pb-5 pt-5 text-white ps-5 mt-3">
+<div class="row">
+<div class="col"><ul class="list-unstyled">
+  <h1 class="fs-5">Quick Link </h1>
+  <li class="">Home</li>
+  <li class="">About</li>
+  <li class="">Blog</li>
+ 
+</ul></div>
+<div class="col"><ul class="list-unstyled">
+  <h1 class="fs-5">Portfolio</h1>
+  <li class="">An item</li>
+  <li class="">A second item</li>
+  <li class="">A third item</li>
+  <li class="">A fourth item</li>
+  <li class="">And a fifth one</li>
+</ul></div>
+<div class="col"><ul class="list-unstyled">
+  <h1 class="fs-6">Book a Session</h1>
+  <li class="">An item</li>
+  <li class="">A second item</li>
+  <li class="">A third item</li>
+  <li class="">A fourth item</li>
+  <li class="">And a fifth one</li>
+</ul></div>
+<div class="col-lg-6">
+  <h1 class="fs-5">Subcribe to Newsletter</h1>
+  <form class="d-flex mt-3 mb-3" role="search">
+    <input class="form-control me-2 w-50 "type="search" placeholder="Enter your email address" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">subscribe</button>
+  </form>
+  Follow Us<br><i class="bi bi-facebook me-2"></i>
+  <i class="bi bi-instagram me-2"></i>
+  <i class="bi bi-twitter me-2"></i>
+  <i class="bi bi-tiktok me-2"></i>
+  <i class="bi bi-youtube me-2"></i>
+  <i class="bi bi-linkedin"></i>
+ </div>
+
+</div>
+</footer>
+
+<div class="row bg-secondary ps-5 text-center">
+  &copy; 2023. All Right Reserved
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
